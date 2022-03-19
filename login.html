@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <title>Login</title>
+    </head>
+    <body>
+    <header>
+        <div>
+            <img src="Imagens/Logo.svg" alt="Logo AluraGeek">
+            <label for="search">
+                <input type="search" name="search" id="search" class="search" placeholder="O que deseja encontrar?">
+                <img src="Imagens/lupa.svg" alt="Lupa pesquisa" class="lupa">
+            </label>
+        </div>
+        <button class="btn-login">
+            <a href="login.html">login</a>
+        </button>
+    </header>
+    <main>
+
+        <!-- Seção de Login -->
+
+        <section id="login">
+
+                <fieldset>
+                    <form id="form-login">
+                            <h2>Iniciar Sessão</h2>
+                        <label for="email" class="email">
+                            <input type="email" name="Email" id="email" placeholder="Digite seu email">
+                        </label>
+                        <label for="senha" class="senha">
+                            <input type="password" name="Senha" id="senha" placeholder="Digite sua senha">
+                        </label>
+                        <label for="submit" class="submit">
+                            <input type="submit" name="botao" id="submit" value="Entrar">
+                        </label>
+                    </form>
+                </fieldset>
+        </section>
+
+        <!-- Seção de contato e footer -->
+
+        <section id="contato">
+            <div class="div-contato">
+                <img src="Imagens/Logo.svg" alt="Logo AluraGeek" class="logo-contato">
+                <nav class="nav-contato">
+                    <ul>
+                        <li>
+                            <a href="#">Quem somos nós</a>
+                        </li>
+                        <li>
+                            <a href="#">Política de privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#">Programa fidelidade</a>
+                        </li>
+                        <li>
+                            <a href="#">Nossas lojas</a>
+                        </li>
+                        <li>
+                            <a href="#">Quero ser franqueado</a>
+                        </li>
+                        <li>
+                            <a href="#">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </nav>
+                <fieldset>
+                    <form action="">
+                        <p>Fale Conosco</p>
+                        <label for="nome" class="label-contato"> Nome </label>
+                        <input type="text" name="Nome" id="nome" >
+
+                        <label for="mensagem"></label>
+                        <textarea type="text" cols="50" rows="5" name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+                        <label for="botao">
+                            <input type="submit" name="botao" id="botao" value="Enviar Mensagem">
+                        </label>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+        <footer>
+            <p>&copy Desenvolvido por Vinícius Almeida 2022.</p>
+        </footer>
+    </main>
+
+    </body>
+</html>

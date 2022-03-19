@@ -60,6 +60,10 @@ header label {
     cursor: pointer;
 }
 
+.btn-login a:visited {
+    color: #2A7AE4;
+}
+
 /* Estilização seção propaganda Banner */
 
 #propaganda {
@@ -115,7 +119,6 @@ header label {
 
 .star-wars {
     width: 80%;
-    display: block;
     margin: auto;
     justify-content: space-between;
 }
@@ -144,6 +147,10 @@ header label {
 .link-vertd:after {
     content: url("../Imagens/seta-vertd.svg");
     margin-left: 10px;
+}
+
+.link-vertd:visited {
+    color: #2A7AE4;
 }
 
 .star-wars ul {
@@ -305,7 +312,7 @@ textarea {
     padding: 20px 10px 10px 10px;
 }
 
-input[type="submit"] {
+#botao {
     height: 51px;
     width: 165px;
     padding: 16px;
