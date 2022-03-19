@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+/* Estilização Header */
+
+header {
+    position: relative;
+    display: flex;
+    height: 115px;
+    padding: 20px 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+header img {
+    margin-right: 30px;
+}
+
+input[type="search"] {
+    width: 380px;
+    height: 32px;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 50px 0 0 50px;
+}
+
+header label {
+    display: flex;
+}
+
+.lupa {
+    padding: 7px;
+    height: 32px;
+    width: 50px;
+    background: #F5F5F5;
+    border-radius: 0 50px 50px 0;
+}
+
+.btn-login {
+    width: 182px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    font-size: 1rem;
+}
+
+/* Estilização seção propaganda Banner */
+
+#propaganda {
+    background-image: url("../Imagens/banner-image.png");
+    height: 352px;
+    position: relative;
+}
+
+.propaganda {
+    position: absolute;
+    width: 80%;
+    height: 170px;
+    align-items: center;
+    margin: 10em auto auto 8em;
+}
+
+.propaganda h1 {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.propaganda p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: .4em;
+}
+
+.btn-propaganda {
+    width: 130px;
+    height:45px;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    margin-top: 1.5em;
+    border: none;
+    outline: none;
+}
+
+/* Estilização seção dos produtos */
+
+#produtos {
+    background: #E5E5E5;
+    display: block;
+    height: 1176px;
+}
+
+.star-wars {
+    width: 80%;
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#produtos h2, .link-vertd {
+    display: inline-flex;
+    margin: 2em 0 0 0;
+}
+
+#produtos h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+}
+
+.link-vertd {
+    float: right;
+    margin-top: 4.5em;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.link-vertd:after {
+    content: url("../Imagens/seta-vertd.svg");
+    margin-left: 10px;
+}
+
+.star-wars ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.star-wars li {
+    display: inline-block;
+}
+
+.consoles {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.consoles h2, .link-vertd {
+    display: inline-block;
+}
+
+.consoles ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.consoles li {
+    display: inline-block;
+}
+
+
+.diversos {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.diversos h2, .link-vertd {
+    display: inline-block;
+}
+
+.diversos ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.diversos li {
+    display: inline-block;
+}
+
+li, h4, p {
+    margin-top: .5em;
+}
+
+li p {
+    margin-bottom: .5em;
+}
+
+/* Estilização da seção do Footer Contato */
+
+#contato {
+    background: #EAF2FD;
+    height: 368px;
+    justify-content: center;
+}
+
+.div-contato {
+    width: 80%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+
+form p {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logo-contato {
+    width: 176px;
+    height: 51px;
+}
+
+.nav-contato ul {
+    margin-top: .05em;
+    width: 220px;
+}
+
+.nav-contato li {
+    margin-bottom: 2em;
+}
+
+.nav-contato a {
+    font-size: 1rem;
+    color: black;
+}
+
+.nav-contato a:hover {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+form, .nav-contato, .logo-contato {
+    margin-top: 2em;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: -1.3rem;
+    margin-left: 0.5rem;
+}
+
+input[type="text"] {
+    display: block;
+    width: 560px;
+    height: 56px;
+    margin: 0 0 3em 0;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+}
+
+textarea {
+    width: 560px;
+    margin: 0 0 1em 0;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+}
+
+input[type="submit"] {
+    height: 51px;
+    width: 165px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    margin-left: -.5em;
+    background: #2A7AE4;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
+}
+
+/* Estilização do Rodapé */
+
+Footer {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
