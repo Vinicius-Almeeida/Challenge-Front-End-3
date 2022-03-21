@@ -71,7 +71,7 @@ header label {
 /* Estilização seção propaganda Banner */
 
 #propaganda {
-    background-image: url("../Imagens/banner-image.png");
+    background-image: url("../Imagens/Banners/banner-image-desktop.jpg");
     height: 352px;
     position: relative;
 }
@@ -119,12 +119,16 @@ header label {
     background: #E5E5E5;
     display: block;
     height: 1176px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .star-wars {
     width: 80%;
     margin: auto;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #produtos h2, .link-vertd {
@@ -149,7 +153,7 @@ header label {
 }
 
 .link-vertd:after {
-    content: url("../Imagens/seta-vertd.svg");
+    content: url("../Imagens/Imagens-Icones/seta-vertd.svg");
     margin-left: 10px;
 }
 
@@ -172,6 +176,8 @@ header label {
     width: 80%;
     display: block;
     margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .consoles h2, .link-vertd {
@@ -194,6 +200,8 @@ header label {
     width: 80%;
     display: block;
     margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .diversos h2, .link-vertd {
@@ -349,4 +357,199 @@ footer p {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1250px){
+
+    .star-wars ul, .consoles ul, .diversos ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 166px;
+        height: 164px;
+    }
+    
+    #produtos ul .produto-6 {
+        border: 1px solid black;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-tablet-1040px.jpg");
+        background-repeat: no-repeat;
+        height: 352px;
+        position: relative;
+    }
+
+    #produtos {
+        height: 1080px;
+    }
+
+    #produtos ul .produto-5 {
+        border: 1px solid black;
+        display: none;
+    }
+
+    .star-wars, .consoles, .diversos {
+        width: 92%;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 164px;
+        height: 174px;
+    }
+
+    #produtos h2 {
+        font-size: 22px;
+        margin-bottom: -1.5em;
+    }
+
+    .link-vertd {
+        float: right;
+        margin-top: 4em;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        display: flex;
+        height: 90px;
+        padding: 5px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+        width: 60%;
+    }
+
+    header img {
+        margin-right: .5em;
+        width: 150px;
+        height: 38px;
+    }
+
+    input[type="search"] {
+        width: 242px;
+        height: 38px;
+        background: #F5F5F5;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        border-radius: 50px 0 0 50px;
+        margin-bottom: 1.5em;
+    }
+
+    header label {
+        display: flex;
+    }
+
+    .lupa {
+        padding: 8px;
+        height: 38px;
+        width: 45px;
+        background: #F5F5F5;
+        border-radius: 0 50px 50px 0;
+    }
+
+    .btn-login {
+        width: 182px;
+        height: 45px;
+        background: #FFFFFF;
+        border: 1px solid #2A7AE4;
+        color: #2A7AE4;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-tablet-768px.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 352px;
+        position: relative;
+    }
+
+    .propaganda {
+        position: absolute;
+        width: 90%;
+        height: 170px;
+        align-items: center;
+        margin: 10em auto auto 2em;
+    }
+
+    #contato {
+        background: #EAF2FD;
+        height: 368px;
+        justify-content: center;
+    }
+
+    .div-contato {
+        width: 92%;
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+    }
+
+
+    .logo-contato {
+        width: 176px;
+        height: 51px;
+    }
+
+    .nav-contato ul {
+        position: absolute;
+        margin-left: -13.5em;
+        margin-top: 3.5em;
+        width: 220px;
+    }
+
+    .nav-contato li {
+        margin-bottom: 2em;
+    }
+
+    label {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: -1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    input[type="text"] {
+        display: block;
+        width: 434px;
+        height: 56px;
+        margin: 0 0 3em 0;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+    textarea {
+        width: 434px;
+        margin: 0 0 1em 0;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
 }
