@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#produto {
+    background: #E5E5E5;
+    height: 920px;
+    padding: 80px 0;
+}
+
+.produto {
+    width: 80%;
+    height: 403px;
+    margin: auto;
+    align-items: center;
+}
+
+.produto img {
+    float: left;
+    margin-right: 1em;
+}
+
+.produto h1 {
+    margin-top: 2em;
+    display: inline-block;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 61px;
+}
+
+.produto p {
+    font-size: 1rem;
+}
+
+.similares {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.similares h2 {
+    margin-top: 2em;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+
+}
+
+.similares ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+
+.similares li {
+    display: inline-block;
+}
+
+.similares li a {
+    font-weight: bold;
+}
+
+.similares li img {
+    width: 166px;
+    height: 164px;
+}

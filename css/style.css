@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+a:visited {
+    color: #2A7AE4;
+}
+
 /* Estilização Header */
 
 header {

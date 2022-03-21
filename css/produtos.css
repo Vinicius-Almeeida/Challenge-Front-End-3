@@ -40,6 +40,10 @@
     outline: none;
 }
 
+#btn-add-produto a {
+    color: #FFFFFF;
+}
+
 .bloco-1 {
     width: 80%;
     display: block;

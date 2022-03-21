@@ -7,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/login.css">
-        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/administrador.css">
+        <title>Página do Administrador</title>
     </head>
     <body>
     <header>
@@ -22,31 +22,44 @@
             </label>
         </div>
         <button class="btn-login">
-            <a href="login.html">login</a>
+            <a href="administrador.html">Menu Administrador</a>
         </button>
     </header>
     <main>
 
-        <!-- Seção de Login -->
+        <!-- Seção Administrador -->
 
-        <section id="login">
+        <section id="administrador">
 
-                <fieldset>
-                    <form id="form-login">
-                            <h2>Iniciar Sessão</h2>
-                        <label for="email" class="email">
-                            <input type="email" name="Email" id="email" placeholder="Digite seu email">
-                        </label>
-                        <label for="senha" class="senha">
-                            <input type="password" name="Senha" id="senha" placeholder="Digite sua senha">
-                        </label>
-                        <label for="submit" class="submit">
-                            <button type="submit" name="botao" id="submit">
-                                <a href="administrador.html">Entrar</a>
-                            </button>
-                        </label>
-                    </form>
-                </fieldset>
+            <div class="add-produto">
+                <h1>Adicionar novo produto</h1>
+                <div>
+                    <img src="Imagens/icone-img.svg" alt="Ícone de imagem">
+                    <p>Arraste para adicionar uma <br> imagem para o produto</p>
+                </div>
+                <p class="ou">Ou</p>
+                <button>Procure no seu computador</button>
+
+            <fieldset>
+                <form id="form-adm">
+                    <label for="nome-produto" class="nome-produto"> Nome do produto </label>
+
+                        <input type="text" name="Nome Produto" id="nome-produto">
+
+                    <label for="preco" class="preco"> Preço do produto </label>
+
+                        <input type="text" name="Preço" id="preco" >
+
+                    <label for="descricao" class="descricao-produto"></label>
+
+                        <input type="text" name="Descrição" id="descricao" placeholder="Descrição do Produto">
+
+                    <label for="submit" class="submit"> </label>
+                        <input type="submit" name="botao" id="submit" value="Adicionar produto">
+
+                </form>
+            </fieldset>
+            </div>
         </section>
 
         <!-- Seção de contato e footer -->
@@ -98,6 +111,5 @@
             <p>&copy Desenvolvido por Vinícius Almeida 2022.</p>
         </footer>
     </main>
-
     </body>
 </html>
