@@ -97,4 +97,11 @@
 .bloco-3 li img {
     width: 166px;
     height: 164px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(91, 91, 91, 0.5);
+    margin-bottom: .5em;
+}
+
+#todos-produtos ul li img:hover {
+    transform: scale(1.1, 1.1);
 }

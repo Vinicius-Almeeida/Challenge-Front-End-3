@@ -15,7 +15,7 @@ a:visited {
 header {
     position: relative;
     display: flex;
-    height: 115px;
+    height: 90px;
     padding: 20px 140px;
     align-items: center;
     justify-content: space-between;
@@ -54,6 +54,10 @@ header label {
     border-radius: 0 50px 50px 0;
 }
 
+.lupa-mobile {
+    display: none;
+}
+
 .btn-login {
     width: 182px;
     height: 45px;
@@ -66,6 +70,11 @@ header label {
 
 .btn-login a:visited {
     color: #2A7AE4;
+}
+
+.btn-login:hover {
+    background: #cee5fd;
+    color: #ffffff;
 }
 
 /* Estilização seção propaganda Banner */
@@ -162,9 +171,9 @@ header label {
 }
 
 .star-wars ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
 }
 
 .star-wars li {
@@ -185,9 +194,9 @@ header label {
 }
 
 .consoles ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
 }
 
 .consoles li {
@@ -209,9 +218,9 @@ header label {
 }
 
 .diversos ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
 }
 
 .diversos li {
@@ -227,7 +236,7 @@ li h4 {
 }
 
 li p {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .star-wars li a, .consoles li a, .diversos li a {
@@ -238,14 +247,15 @@ li p {
 .diversos li img {
     width: 166px;
     height: 164px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(91, 91, 91, 0.5);
+    margin-bottom: .5em;
 }
 
-/*.star-wars li img:hover, .consoles li img:hover,
-.diversos li img:hover {
-    width: 196px;
-    height: 194px;
-    transform: scale(1, 1);
-} */
+#produtos ul li img:hover {
+    transform: scale(1.1, 1.1);
+}
+
 
 /* Estilização da seção do Footer Contato */
 
@@ -292,7 +302,6 @@ form p {
 
 .nav-contato a:hover {
     color: blue;
-    font-size: 1.2rem;
 }
 
 form, .nav-contato, .logo-contato {
@@ -547,6 +556,230 @@ footer p {
     textarea {
         width: 434px;
         margin: 0 0 1em 0;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    header {
+        position: relative;
+        display: flex;
+        height: 80px;
+        padding: 5px 20px;
+    }
+
+    header div {
+        display: flex;
+        width: 30%;
+    }
+
+    header img {
+        margin-left: -.9em;
+        width: 120px;
+        height: 33px;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    header label {
+        display: flex;
+    }
+
+    .lupa {
+        padding: 8px;
+        height: 38px;
+        width: 45px;
+        background: transparent;
+        color: black;
+        display: none;
+    }
+
+    .btn-login {
+        width: 133px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #2A7AE4;
+        color: #2A7AE4;
+        font-size: .8rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 2em;
+    }
+
+    .lupa-mobile {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-right: .2em;
+    }
+
+    #propaganda {
+        background-image: url("../Imagens/Banners/banner-image-mobile-414px.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 192px;
+        position: relative;
+    }
+
+    .propaganda {
+        position: absolute;
+        width: 90%;
+        height: 98px;
+        align-items: center;
+        margin: 4em auto auto .9em;
+    }
+
+    .propaganda h1 {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 61px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .propaganda p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: left;
+        color: #FFFFFF;
+        margin-top: -1em;
+    }
+
+    .btn-propaganda {
+        width: 119px;
+        height:40px;
+        background: #2A7AE4;
+        color: #FFFFFF;
+        margin-top: .3em;
+        border: none;
+        outline: none;
+    }
+
+    #produtos {
+        height: 1783px;
+    }
+
+    #produtos h2 {
+        font-size: 22px;
+        margin-bottom: .2em;
+        margin-top: 1em;
+    }
+
+    #produtos ul .produto-5, .produto-6 {
+        display: none;
+    }
+
+
+    .star-wars, .consoles, .diversos {
+        width: 92%;
+        margin: auto;
+    }
+
+    .star-wars li img, .consoles li img,
+    .diversos li img {
+        width: 156px;
+        height: 165px;
+    }
+
+    .star-wars li, .consoles li,
+    .diversos li {
+        margin-bottom: 1em;
+    }
+
+    li p, a, h4 {
+        font-size: .8rem;
+    }
+
+
+    .link-vertd {
+        float: right;
+        margin-top: 3em;
+        font-size: .8rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .link-vertd:after {
+        content: url("../Imagens/Imagens-Icones/seta-vertd-mobile.svg");
+        margin-left: .3em;
+    }
+
+
+    #contato {
+        background: #EAF2FD;
+        height: 620px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-contato {
+        width: 92%;
+        height: 100%;
+        margin: auto;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #logo-contato {
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+
+    .nav-contato ul {
+        position: relative;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-contato li {
+        position: relative;
+        margin-bottom: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-contato a {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    label {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: -1.3rem;
+        margin-left: 0.5rem;
+    }
+
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        height: 56px;
+        margin: auto auto 3em auto;
+        border: none;
+        outline: none;
+        padding: 20px 10px 10px 10px;
+    }
+
+    textarea {
+        width: 100%;
+        margin: auto auto .5em auto;
         border: none;
         outline: none;
         padding: 20px 10px 10px 10px;
