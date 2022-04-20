@@ -35,6 +35,10 @@ header {
     font-weight: 700;
     margin-top: 6em;
     margin-left: -1.5em;
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
 }
 
 #btn-add-produto {

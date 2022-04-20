@@ -36,18 +36,19 @@ header img {
 }
 
 input[type="search"] {
-    width: 380px;
+    width: 470px;
     height: 32px;
     background: transparent;
     border: none;
     outline: none;
     padding: 10px 15px;
     border-radius: 50px 0 0 50px;
-    margin-bottom: 1.5em;
+    margin: 0 0 1.5em 3em;
     box-shadow:  -2px -2px 0 #05F2DB,
     -2px 2px 0 #05F2DB,
     0 0 0 #05F2DB,
     0 0 0 #05F2DB;
+    color: #05F2DB;
 }
 
 header label {
@@ -73,7 +74,7 @@ header label {
 
 .btn-login {
     width: 182px;
-    height: 40px;
+    height: 42px;
     background: transparent;
     border: none;
     border-radius: 10px;
@@ -84,6 +85,7 @@ header label {
     -1px 1px 0 #05F2DB,
     1px -1px 0 #05F2DB,
     1px 1px 0 #05F2DB;
+    margin-top: .2em;
 }
 
 .btn-login a:visited {

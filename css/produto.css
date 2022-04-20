@@ -5,9 +5,13 @@
     font-family: 'Raleway', sans-serif;
 }
 
+header {
+    border-bottom: 1px solid #05F2DB;
+}
+
 #produto {
-    background: #E5E5E5;
-    height: 920px;
+    background: #252625;
+    height: 1000px;
     padding: 80px 0;
 }
 
@@ -16,11 +20,16 @@
     height: 403px;
     margin: auto;
     align-items: center;
+    padding: 5em 0 0 0;
 }
 
 .produto img {
     float: left;
     margin-right: 1em;
+    box-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
 }
 
 .produto h1 {
@@ -30,26 +39,42 @@
     font-style: normal;
     font-weight: 500;
     line-height: 61px;
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
 }
 
 .produto p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 1.8em;
+    color: #05F2DB;
+}
+
+.produto h4 {
+    font-size: 1.5rem;
+    color: #79e30a;
 }
 
 .similares {
-    width: 80%;
+    width: 85%;
     margin: auto;
     justify-content: space-between;
 }
 
 .similares h2 {
-    margin-top: 2em;
+    margin-top: 4em;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
-
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
 }
+
+
 
 .similares ul {
     display: flex;
@@ -59,13 +84,26 @@
 
 .similares li {
     display: inline-block;
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #FFF;
+    background: #FFFFFF;
 }
 
 .similares li a {
     font-weight: bold;
+    margin-left: .4em;
 }
 
 .similares li img {
-    width: 166px;
+    width: 180px;
     height: 164px;
+    border-radius: 5% 5% 0 0;
 }
+
+.similares ul li:hover {
+    transform: scale(1.1, 1.1);
