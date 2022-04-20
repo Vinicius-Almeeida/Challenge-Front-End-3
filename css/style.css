@@ -13,12 +13,16 @@ a:visited {
 /* Estilização Header */
 
 header {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     display: flex;
     height: 90px;
     padding: 20px 140px;
     align-items: center;
     justify-content: space-between;
+    background: #252625;
 }
 
 header div {
@@ -34,12 +38,16 @@ header img {
 input[type="search"] {
     width: 380px;
     height: 32px;
-    background: #F5F5F5;
+    background: transparent;
     border: none;
     outline: none;
     padding: 10px 15px;
     border-radius: 50px 0 0 50px;
     margin-bottom: 1.5em;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #05F2DB,
+    0 0 0 #05F2DB,
+    0 0 0 #05F2DB;
 }
 
 header label {
@@ -50,8 +58,13 @@ header label {
     padding: 7px;
     height: 32px;
     width: 50px;
-    background: #F5F5F5;
+    margin-left: -.5em;
+    background: transparent;
     border-radius: 0 50px 50px 0;
+    box-shadow:  0 0 0 #F5F5F5,
+    0 2px 0 #05F2DB,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #05F2DB;
 }
 
 .lupa-mobile {
@@ -60,12 +73,17 @@ header label {
 
 .btn-login {
     width: 182px;
-    height: 45px;
-    background: #FFFFFF;
-    border: 1px solid #2A7AE4;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
     color: #2A7AE4;
     font-size: 1rem;
     cursor: pointer;
+    box-shadow:  -1px -1px 0 #05F2DB,
+    -1px 1px 0 #05F2DB,
+    1px -1px 0 #05F2DB,
+    1px 1px 0 #05F2DB;
 }
 
 .btn-login a:visited {
@@ -73,7 +91,7 @@ header label {
 }
 
 .btn-login:hover {
-    background: #cee5fd;
+    background: rgba(5, 242, 219, .2);
     color: #ffffff;
 }
 
@@ -83,6 +101,8 @@ header label {
     background-image: url("../Imagens/Banners/banner-image-desktop.jpg");
     height: 352px;
     position: relative;
+    top: 4em;
+    bottom: 2em;
 }
 
 .propaganda {
@@ -125,37 +145,41 @@ header label {
 /* Estilização seção dos produtos */
 
 #produtos {
-    background: #E5E5E5;
+    background: #252625;
     display: block;
-    height: 1176px;
+    height: 1226px;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.star-wars {
-    width: 80%;
-    margin: auto;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#produtos h2, .link-vertd {
-    display: inline-flex;
-    margin: 2em 0 0 0;
+    padding: 5em 0 0 0;
 }
 
 #produtos h2 {
+    display: inline-flex;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
     text-align: left;
+    text-shadow: -1px -1px 0 #05F2DB,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #05F2DB,
+    1px 0 0 #FFF;
+    margin: 1.5em 0 0 0;
+}
+
+.star-wars, .consoles, .diversos {
+    position: relative;
+    width: 85%;
+    display: block;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .link-vertd {
+    display: inline-flex;
     float: right;
-    margin-top: 5.5em;
+    margin-top: 3.5em;
     font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
@@ -180,15 +204,6 @@ header label {
     display: inline-block;
 }
 
-.consoles {
-    position: relative;
-    width: 80%;
-    display: block;
-    margin: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .consoles h2, .link-vertd {
     display: inline-block;
 }
@@ -203,15 +218,6 @@ header label {
     display: inline-block;
 }
 
-
-.diversos {
-    position: relative;
-    width: 80%;
-    display: block;
-    margin: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .diversos h2, .link-vertd {
     display: inline-block;
@@ -233,26 +239,41 @@ li, h4, p {
 
 li h4 {
     margin-bottom: .5em;
+    margin-left: .3em;
 }
 
 li p {
     font-size: .9rem;
+    font-weight: 590;
+    margin-left: .3em;
+}
+
+.star-wars li, .consoles li,
+.diversos li {
+    width: 180px;
+    height: 260px;
+    border-radius: 5%;
+    box-shadow:  -2px -2px 0 #05F2DB,
+    -2px 2px 0 #FFF,
+    2px -2px 0 #05F2DB,
+    2px 0 0 #FFF;
+    background: #FFFFFF;
 }
 
 .star-wars li a, .consoles li a, .diversos li a {
     font-weight: bold;
+    margin-left: .3em;
 }
 
 .star-wars li img, .consoles li img,
 .diversos li img {
-    width: 166px;
+    width: 180px;
     height: 164px;
-    border-radius: 5%;
-    box-shadow: 2px 2px 2px 2px rgba(91, 91, 91, 0.5);
+    border-radius: 5% 5% 0 0;
     margin-bottom: .5em;
 }
 
-#produtos ul li img:hover {
+#produtos ul li:hover {
     transform: scale(1.1, 1.1);
 }
 
@@ -260,7 +281,7 @@ li p {
 /* Estilização da seção do Footer Contato */
 
 #contato {
-    background: #EAF2FD;
+    background: #05F2DB;
     height: 368px;
     justify-content: center;
 }
@@ -358,6 +379,7 @@ Footer {
     justify-content: center;
     align-items: center;
     padding: 32px;
+    background: linear-gradient(to bottom, #05F2DB, #05F2DB, #1aa99a);
 }
 
 footer p {
